@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="design.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
@@ -27,11 +28,14 @@
         
         <ol>
             <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
-            <!--ANWER HERE-->
-
+            <form action="action.php" method="post">
+            <label for="date">Date</label> <input type="date" min="2023-09-16" name="date" id="date"> <input type="submit" >
+            </form>
             <!--END ANWER HERE-->
 
             <li>An input field used to select ONE item from the Southeast Asian nations, with Philippines as initially selected record: (follow the order of nations below)</li>
+           
+      
                     <ul>
                         <li>Burma</li>
                         <li>Brunei</li>
@@ -45,9 +49,24 @@
                         <li>Timor-Leste</li>
                         <li>Vietname</li>
                     </ul>
-            <!--ANWER HERE--> 
-            
-            <!--END ANWER HERE-->
+                    <form action="action.php" method="post">
+                    <label for="SEACountry"> Choose a SEA Country: </label> <select name="Select A Country" name="SEACountry" id="SEACountry">
+                    <option value="Philippines">Philippines</option>
+                    <option value="Burma"> Burma </option>
+                    <option value="Brunei"> Brunei </option>
+                    <option value="Cambodia"> Cambodia </option>
+                    <option value="Indonesia"> Indonesia </option>              
+                    <option value="Laos"> Laos </option>
+                    <option value="Malaysia"> Malaysia </option>
+                    <option value="Philippines"> Philippines </option>
+                    <option value="Singapore"> Singapore </option>
+                    <option value="Thailand"> Thailand </option>
+                    <option value="Timor-Leste"> Timor-Leste </option>              
+                    <option value="Vietname"> Vietname </option>  
+                </optgroup>
+                   </select>
+                   <input type="submit" >
+                    </form>
 
             <li>An input field for ingredients that can select one or more from the list:</li>
                 <ul>
@@ -58,21 +77,28 @@
                     <li>Carrots</li>
                     <li>Onion</li>
                 </ul>
-            <!--ANWER HERE--> 
-            
-            <!--END ANWER HERE--> 
+                <form action="action.php" method="post">
+                <input type="checkbox" name="ingredients" value="Fresh-Calery" checked><label for="Fresh-Celery">Fresh Celery</label><br>
+                <input type="checkbox" name="ingredients" value="Skim-Milk"><label for="Skim-Milk">Skim Milk</label><br>
+                <input type="checkbox" name="ingredients" value="Turkey-Celery"><label for="Turkey-Celery">Turkey Celery</label><br>
+                <input type="checkbox" name="ingredients" value="Butter"><label for="Butter">Butter</label><br>
+                <input type="checkbox" name="ingredients" value="Carrots"><label for="Carrots">Carrots</label><br>
+                <input type="checkbox" name="ingredients" value="Onion"><label for="Onion">Onion</label><br>
+                <input type="submit" >
+            </form>
 
             <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
-            <!--ANWER HERE--> 
-            
-            <!--END ANWER HERE-->  
+            <form action="action.php" method="post">
+                <input type="radio" name="Account" value="administrator" checked><label for="administrator">Administrator</label> <br>
+                <input type="radio" name="Account" value="user"><label for="user">User</label> <br>
+                <input type="submit" >
+            </form>
 
             <li>An input field to upload one or more audio related files(like mp3, wav, ogg, m4a)</li>
-            <!--ANWER HERE--> 
-            
-            <!--END ANWER HERE-->    
-                
-
+            <form action="action.php" method="post">
+                <input type="file" name="music file" id="music file" accept=".mp3,.wav,.ogg,m4a">
+                <input type="submit" >
+            </form>
         </ol>
     </section>
 
@@ -98,9 +124,156 @@
                 <td style="border: 1px solid black;">data</td>
             </tr>
         </table>
-        <!--ANWER HERE--> 
-                
-        <!--END ANWER HERE-->
+    
+    
+        <div>
+        <table>
+            <thead>
+            <tr>
+                <th class=timehead rowspan="2"> Time </th>
+                <th class=weekhead colspan="6"> Days of the week</th>
+
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+              <tr> <td>7:00 - 7:30</td> 
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                <td rowspan="11" class="pm"> Project Management </td>
+                    <td></td>
+                <td rowspan="7" class="rs">RDBMS</td></tr>
+              <tr> <tr> <td>7:30 - 8:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>8:00 - 8:30</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>8:30 - 9:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>9:00 - 9:30</td> 
+                    <td></td>
+                    <td></td>
+            <td rowspan="6" class="network">Network Management</td>
+                    <td></td></tr>
+              <tr> <td>9:30 - 10:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>10:00 - 10:30</td> 
+                    <td></td>
+            <td rowspan="4" class="network">Network Management</td>
+                    <td></td>
+            <td rowspan="6" class="event">Event Driven</td></tr>
+              <tr> <td>10:30 - 11:00</td> 
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>11:00 - 11:30</td> 
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>11:30 - 12:00</td> 
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>12:00 - 12:30</td> 
+                <td rowspan="4" class="rs"> RDBMS</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>12:30 - 13:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>13:00 - 13:30</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+            <td rowspan="6" class="webdev"> Web Dev</td></tr>
+              <tr> <td>13:30 - 14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> </tr>
+              <tr> <td>14:00 - 14:30</td>
+                <td rowspan="4" class="event">Event Driven</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> </tr>
+              <tr> <td>14:30 - 15:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>15:00 - 15:30</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>15:30 - 16:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>16:00 - 16:30</td> 
+                <td rowspan="4" class="webdev">Web dev</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+
+              <tr> <td>16:30 - 17:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+              <tr> <td>17:00 - 17:30</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>17:30 - 18:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>18:00 - 18:30</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+              <tr> <td>18:30 - 19:00</td> 
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td></tr>
+
+            </thead>
+        </table>
+    </div>
     </section>
     
 </body>

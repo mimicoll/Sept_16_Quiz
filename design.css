@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+th,tr,th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+td{
+    background-color: rgb(245, 233, 219);
+}
+th {
+    background-color: blanchedalmond;
+}
+.event
+{
+    background-color: rgb(238, 238, 181);
+}
+.rs {
+    background-color: rgb(191, 240, 224);
+}
+.webdev{
+    background-color: pink;
+}
+.network{
+    background-color: rgb(189, 189, 234);
+}
+.pm {
+    background-color: rgb(219, 166, 147);
+}
